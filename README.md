@@ -9,3 +9,5 @@ read "https://primer.picoctf.org/#_javascript" before starting the challenges. W
 after changing message to hi 
 ![cowsay 1](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/07af0d3e-d22b-4c63-8a42-be9e1defe50a)
 
+![cow said 1](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/4cfd9103-6f5a-4b8e-8b0a-8990f8759d61)
+
