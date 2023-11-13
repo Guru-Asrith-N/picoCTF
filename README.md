@@ -14,3 +14,11 @@ after changing message to hi
 after changing message to ls
 ![cowsay 2](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/01074d61-c02f-47b5-90c0-45ca555f398b)
 ![cow said 2](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/df86280d-029c-49d7-9429-89ad58a16360)
+
+after changing message to hi;ls
+![cowsay 3](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/4c273773-7376-4ec2-a10a-17ec52ea308f)
+![cow said 3](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/7232139c-ac5a-404f-906d-002e05ca5b0c)
+
+after changing message to hi;ls;cat falg.txt
+![cowsay 4](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/25265692-a6f7-4047-912b-2356f93a4a08)
+![cow said 4](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/ad55e1ec-af7e-4c15-bd80-fbb046420350)
