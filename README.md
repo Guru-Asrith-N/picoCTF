@@ -22,3 +22,7 @@ after changing message to hi;ls
 after changing message to hi;ls;cat falg.txt
 ![cowsay 4](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/25265692-a6f7-4047-912b-2356f93a4a08)
 ![cow said 4](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/ad55e1ec-af7e-4c15-bd80-fbb046420350)
+
+#### forbidden paths
+
+![converting absolute to relative paths](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/ff3f0354-5023-427c-a777-fb1b3e66df29)
