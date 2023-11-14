@@ -26,6 +26,47 @@ got the flag
 flag : picoCTF{qu1t3_a_v13w_2020}
 ```
 
+#### trivial FTP
 
-
+opened the challenge     
+downloaded the file in ubuntu terminal using `wget https://mercury.picoctf.net/static/e4836d9bcc740d457f4331d68129a0bc/tftp.pcapng`     
+used `file tftp.pcapng`     
+opened it in 'wireshark' since it is a packet distribution     
+searched in google for what is tftp . found that it was more of sending data and recieving acknowledgements     
+looked it up in a writeup 'https://medium.com/@quackquackquack/picoctf-trivial-flag-transfer-protocol-writeup-20c5d2d0dfdf'      
+used `tftp.type` to filter all files      
+after filtering all files i exported them using 'file--> export --> TFTP'     
+after that saved them in downloads      
+after that went to terminal     
+went into downloads using `cd downloads` and used `cat instructions.txt` . found encrypted text    
+tried using ROT13 decryption pattern using `cat instructions.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'`    
+got a code which says 'TFTPDOESNTENCRYPTOURTRAFFICSOWEMUSTDISGUISEOURFLAGTRANSFER.FIGUREOUTAWAYTOHIDETHEFLAGANDIWILLCHECKBACKFORTHEPLAN' . this is without space in between words   
+it says to check the plan    
+so used `cat plan` . the text is encrypted again mostly using ROT13    
+tried using ROT13 decryption pattern using `cat plan | tr 'A-Za-z' 'N-ZA-Mn-za-m'`    
+got a code which says 'IUSEDTHEPROGRAMANDHIDITWITH-DUEDILIGENCE.CHECKOUTTHEPHOTOS'     
+since it says program tried to run the program using `cat program`     
+didn't work    
+so used `sudo apt-get install program.deb`    
+gave an output to replace program with steghide    
+so used `sudo apt-get install steghide`     
+looked up 'http://steghide.sourceforge.net/'    
+tried to find where steghide was installed    
+tried to extract the pictures using `steghide extract -sf picture1.bmp -p “DUEDILIGENCE”` since it said that he used the program with DUEDILIGENCE as password    
+tried the same with picture2 and picture3 .Didn't work      
+later realised that once you open 'program.deb' in files you have to unzip 3 files in it     
+after unziping them went through each of the files      
+inside the 'data' folder "usr/share/doc/steghide" there is a readme file zipped     
+unzipped it and read it     
+it said that you have to also install libmhash, libmcrypt, libjpeg and zlib for steghide to work    
+so installed them     
+tried to extract the pictures using `steghide extract -sf picture1.bmp -p “DUEDILIGENCE”` . no output    
+got an output when i tried the samething for picture3    
+using steghide extracted the file `steghide extract -sf picture3.bmp`    
+gave the output as a file named flag.txt    
+used `cat flag.txt`    
+got the flag      
+``` 
+flag : picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}  
+```
 
