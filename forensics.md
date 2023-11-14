@@ -70,3 +70,31 @@ got the flag
 flag : picoCTF{h1dd3n_1n_pLa1n_51GHT_18375919}  
 ```
 
+#### macrohard weakedge
+
+opened the challenge    
+installed the file using `wget https://mercury.picoctf.net/static/d3dd8cd51524d9fafcccd1b7d55f85e7/Forensics%20is%20fun.pptm`      
+used `file 'Forensics is fun.pptm'` . found that it is a microsoft ppt    
+used `cat 'Forensics is fun.pptm'` . got nothing     
+went through writeup 'https://github.com/vivian-dai/PicoCTF2021-Writeup/blob/main/Forensics/MacroHard%20WeakEdge/MacroHard%20WeakEdge.md' . Didn't understand properly     
+installed binwalk and used `binwalk 'Forensics is fun.pptm'`    
+found zip files . extracted them using `binwalk -e 'Forensics is fun.pptm'`    
+used `ls`     
+found 0.zip file     
+extracted using `extract 0.zip`     
+tried using `grep -r pico`. Didn't work     
+tried using `find hidden` . Didn't work     
+used `man find`. found tree function as interesting    
+downloaded tree using `sudo apt install tree`     
+used `tree`    
+found a file name hidden     
+used `cd ppt/slideMasters`   
+used `ls`    
+used `cat hidden`   
+after searching in google found that it was a base64 encoded file    
+after decoding it got the flag   
+```
+flag : picoCTF{D1d_u_kn0w_ppts_r_z1p5}   
+```
+
+
