@@ -26,3 +26,11 @@ after changing message to hi;ls;cat falg.txt
 #### forbidden paths
 
 ![converting absolute to relative paths](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/ff3f0354-5023-427c-a777-fb1b3e66df29)
+
+
+
+
+### forensics
+
+#### tunn3l_v1s10n
+
