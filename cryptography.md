@@ -2,14 +2,14 @@
 
 #### new_caesar
 
-opened the challenge 
-downloaded the python file `wget https://mercury.picoctf.net/static/2fc43dd1a3718df7debf367b0e092831/new_caesar.py`
-used `python3 new_caesar.py`
-opened the file `nano new_caesar.py`
-read the file 
-didn't understand fully. so saw a writeup 'https://ctftime.org/writeup/28927'
-followed what was given in writeup
-did all the process in the original python file in reverse by subtracting and then using python file 
+opened the challenge     
+downloaded the python file `wget https://mercury.picoctf.net/static/2fc43dd1a3718df7debf367b0e092831/new_caesar.py`    
+used `python3 new_caesar.py`        
+opened the file `nano new_caesar.py`     
+read the file       
+didn't understand fully. so saw a writeup 'https://ctftime.org/writeup/28927'     
+followed what was given in writeup      
+did all the process in the original python file in reverse by subtracting and then using python file      
 ```
 # import string
 import string
@@ -66,10 +66,10 @@ flag : picoCTF{et_tu?_0797f143e2da9dd3e7555d7372ee1bbe}
 
 ####  mod1
 
-opened the challenge
-used `cat message.txt`
-didn't know what to do referred writeup
-created a python script for given conditions using `nano python.py` 
+opened the challenge   
+used `cat message.txt`     
+didn't know what to do referred writeup     
+created a python script for given conditions using `nano python.py`      
 ```
 def decode(number):
     r = number % 37
@@ -90,25 +90,25 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-according to given data "a=0  b=1 ..... z=25 0=26 1=27 ..... 9=35  _=36 "
+according to given data "a=0  b=1 ..... z=25 0=26 1=27 ..... 9=35  _=36 "     
 
-got numbers after comparing with given key you will get flag
+got numbers after comparing with given key you will get flag      
 ```
 flag : picoCTF{R0UND_N_R0UND_B6B25531}
 ```
 
 #### miniRSA
 
-opened the challenge
-downloaded the file using `wget https://jupiter.challenges.picoctf.org/static/ee7e2388b45f521b285334abb5a63771/ciphertext`
-opened the file using `cat ciphertext`
-the formula is given in primer for this ( `m^e mod n = c `)
-although it looks difficult , there is a small chance that `m^e <n`  in which case `m^e = c` . e is also very small which shows that the chance of this occuring is very high 
-therefore `m = c^(1/e)` 
-directly substituting the values will not give the answer as it will give shortened form
-searched in google about how to write a program for this but didn't get it 
-finally read a writeup  'https://github.com/VermillionBird/CTF-Writeups/blob/master/2019/picoCTF/Cryptography/miniRSA/README.md' and got the program from there 'https://github.com/VermillionBird/CTF-Writeups/blob/master/Useful-Scripts/Cryptography/invpow.py'
-got the flag
+opened the challenge      
+downloaded the file using `wget https://jupiter.challenges.picoctf.org/static/ee7e2388b45f521b285334abb5a63771/ciphertext`    
+opened the file using `cat ciphertext`     
+the formula is given in primer for this ( `m^e mod n = c `)     
+although it looks difficult , there is a small chance that `m^e <n`  in which case `m^e = c` . e is also very small which shows that the chance of this occuring is very high       
+therefore `m = c^(1/e)`      
+directly substituting the values will not give the answer as it will give shortened form     
+searched in google about how to write a program for this but didn't get it          
+finally read a writeup  'https://github.com/VermillionBird/CTF-Writeups/blob/master/2019/picoCTF/Cryptography/miniRSA/README.md' and got the program from there 'https://github.com/VermillionBird/CTF-Writeups/blob/master/Useful-Scripts/Cryptography/invpow.py'     
+
 ```
 flag : 
 ```
