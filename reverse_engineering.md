@@ -68,7 +68,7 @@ print(hashlib.sha256(bUsername_trial).hexdigest()[7])
 print(hashlib.sha256(bUsername_trial).hexdigest()[1])  
 print(hashlib.sha256(bUsername_trial).hexdigest()[8])
 ```
-got the missing digits 'e584b363'
+got the missing digits 'e584b363'    
 got the flag 
 ```
 flag : picoCTF{1n_7h3_|<3y_of_e584b363}
