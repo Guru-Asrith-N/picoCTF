@@ -109,4 +109,7 @@ if __name__ == '__main__':
 ```
 according to given data "a=0  b=1 ..... z=25 0=26 1=27 ..... 9=35  _=36 "
 
-
+got numbers after comparing with given key you will get flag
+```
+flag : picoCTF{R0UND_N_R0UND_B6B25531}
+```
