@@ -35,3 +35,41 @@ converted largest value to 32 bit hexadecimal
 ```
 flag : picoCTF{e5c69cd8}
 ```
+
+
+#### keygenme-py
+
+opened challenge    
+downloaded the file `wget https://mercury.picoctf.net/static/9cc50abd5b012891d5a1132e05f15a07/keygenme-trial.py`    
+used `nano keygenme-trial.py`    
+read through the code      
+intial part of the flag is given and we have to the next part of the flag    
+i didn't understand what to do after this so i referred to this writeup 'https://github.com/vivian-dai/PicoCTF2021-Writeup/blob/main/Reverse%20Engineering/keygenme-py/keygenme-py.md'    
+the key length should be same as the flag length     
+the numbers given in hashlib are the same number as the number of letters missing in the flag      
+the number order given is 45362718 in hashlib      
+used the following code although i didn't understand completely      
+```
+import hashlib  
+username_trial = "SCHOFIELD"  
+bUsername_trial = b"SCHOFIELD"  
+
+key_part_static1_trial = "picoCTF{1n_7h3_|<3y_of_"  
+key_part_dynamic1_trial = "xxxxxxxx"  
+key_part_static2_trial = "}"  
+key_full_template_trial = key_part_static1_trial + key_part_dynamic1_trial + key_part_static2_trial  
+
+print(hashlib.sha256(bUsername_trial).hexdigest()[4])  
+print(hashlib.sha256(bUsername_trial).hexdigest()[5])  
+print(hashlib.sha256(bUsername_trial).hexdigest()[3])  
+print(hashlib.sha256(bUsername_trial).hexdigest()[6])  
+print(hashlib.sha256(bUsername_trial).hexdigest()[2])  
+print(hashlib.sha256(bUsername_trial).hexdigest()[7])  
+print(hashlib.sha256(bUsername_trial).hexdigest()[1])  
+print(hashlib.sha256(bUsername_trial).hexdigest()[8])
+```
+got the missing digits 'e584b363'
+got the flag 
+```
+flag : picoCTF{1n_7h3_|<3y_of_e584b363}
+```
