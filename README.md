@@ -41,3 +41,21 @@ before changing height in hex editor
 
 after changing height in hex editor
 ![hex editor new](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/476433ae-45a3-4e9f-9cd9-4808bb386bb3)
+
+
+
+### binary exploitation
+
+#### buffer overflow
+
+segment error identfication
+![segmentation error](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/2cc44175-0c1f-43e1-adbb-827f58ce05b0)
+
+causes of segmentation error
+![segmentation error](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/678e5f74-fa7e-41ec-8781-8a80d2298e2d)
+
+gets function
+![gets function](https://github.com/Guru-Asrith-N/picoCTF/assets/147991595/e7544993-46b0-4761-98f1-e97a6a5510a2)
+
+
+
