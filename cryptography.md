@@ -83,3 +83,30 @@ flag : picoCTF{et_tu?_0797f143e2da9dd3e7555d7372ee1bbe}
 
 ####  mod1
 
+opened the challenge
+used `cat message.txt`
+didn't know what to do referred writeup
+created a python script for given conditions using `nano python.py` 
+```
+def decode(number):
+    r = number % 37
+    return r
+
+def main():
+    f = open("message.txt", "r", encoding="UTF-8")
+    lst = f.read().split()
+    # print(lst[0])
+
+    dec_lst = []
+
+    for i in range(len(lst)):
+        dec_lst.append(decode(int(lst[i])))
+
+    print(dec_lst)
+
+if __name__ == '__main__':
+    main()
+```
+according to given data "a=0  b=1 ..... z=25 0=26 1=27 ..... 9=35  _=36 "
+
+
