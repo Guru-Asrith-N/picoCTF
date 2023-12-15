@@ -35,3 +35,16 @@ got the flag
 flag - picoCTF{by73_5urf3r_adac6cb4}
 ```
 
+#### disk,disk,sleuth! ||
+
+opened the challenge    
+downloaded the file using `wget` command    
+extracted the file using `gunzip` command    
+used `mmls ` command       
+found the lengthiest file and used `fls` command     
+used `fls ` command to enter root directory since it has the highest probability of flag    
+used `icat ` command to read the content in the root directory     
+got the flag     
+```
+flag - picoCTF{f0r3ns1c4t0r_n0v1c3_ff27f139}
+```
