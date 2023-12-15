@@ -18,3 +18,20 @@ got the flag
 flag - picoCTF{mm15_f7w!}  
 ```
 
+#### sleuthkit apprentice
+
+opened the challenge     
+downloaded the file using `wget`      
+extracted the file using `gunzip`      
+used `mmls` command       
+found the fourth partition to be the most lengthiest      
+read through the basics of disk analysis in primer      
+used `fls -o 360448 disk.flag.img `        
+used `fls -o 360448 disk.flag.img 1995` to enter root directory     
+used `fls -o 360448 disk.flag.img 2371` to enter my_folder directory      
+used `icat -o 360448 disk.flag.img 2371` to read the data in my_folder     
+got the flag     
+```
+flag - picoCTF{by73_5urf3r_adac6cb4}
+```
+
